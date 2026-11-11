@@ -44,7 +44,8 @@ The `love` runtime and `lib/` folders are not built here. Copy them from a LÖVE
 
 ## Tests
 
-The expression parser was checked against a set of cases with plain LuaJIT. The apps were run under LÖVE 11.5 with scripted input. They have not yet been run on the handheld.
+The expression parser was checked against a set of cases with plain LuaJIT. The apps were run under LÖVE 11.5 with scripted input.
+Tested on GOODLUCKOS V0.1.0 run without problem.
 
 ## Licence
 
