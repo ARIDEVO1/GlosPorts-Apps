@@ -1,0 +1,6 @@
+[ENTRY]
+CATEGORY=Ports
+NAME=Calculator
+DESCRIPTION=Engineering calculator: SI units, parallel resistors, circuit formulas
+ICON=/home/player/.local/share/icons/calc.png
+COMMAND=/home/player/ports/calc/run.sh
