@@ -7,6 +7,23 @@ Two small apps for the goodluckOS handheld (GA36-MB), built with LÖVE 11.5:
 
 Both use a shared on-screen keyboard (`shared/osk.lua`) and are controlled with the gamepad.
 
+> #V1.1
+> New
+> - Resistor tool: 4-band and 5-band color-code reader, plus an E12/E24 picker for the last result.
+> - Units tool: the last result in every readable SI prefix, plus dB helpers.
+> - Select (or F2) cycles through the calculator, resistor, and units pages.
+> - README rewritten for this version.
+> - Logic tests moved into `tests/test_logic.lua.`
+> Fixed
+> - The calculator crashed on its function-key row (bare strings in a keypad row). Fixed before the release.
+> - `ans` was saved one step late. Now it’s saved with the result.
+> - Values like 999.9999 are shown as `1000` instead of `1k`.
+> - The resistor tool’s 5-band header lost its “(Y to change)” hint due to an operator-precedence bug.
+> - The units tool printed `4.6e+15` and `inf` for values that don’t read cleanly. Those rows are now hidden.
+> Removed
+> - The single mixed keypad. It’s now two keypads, BASIC and ENGINEERING, switched with L and R. This was in the released version.
+> - Nothing else has been removed. Y still opens the formula list, and Tab still does too.
+
 ## Controls
 
 | | Calculator | Notebook |
